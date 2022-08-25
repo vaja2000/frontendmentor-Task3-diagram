@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Outfit:wght@200&display=swap');
+.container {
+    width: 400px;
+    font-family: 'Outfit', sans-serif;
+    .top {
+        width: 100%;
+        height: 100px;
+        background-color: hsl(10, 79%, 65%);
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 30px;
+        color: #FFF;
+        box-sizing: border-box;
+        p {
+            margin: 15px 0px 7px 0px;
+        }
+        strong {
+            font-size: 23px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            img {
+                width: 50px;
+            }
+        }
+    }
+    .bottom {
+        margin-top: 20px;
+        width: 100%;
+        height: 370px;
+        background-color: #FFF;
+        border-radius: 15px;
+        box-sizing: border-box;
+        padding: 10px 30px;
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            margin: 10px 0px;
+            color: hsl(25, 47%, 15%);
+        }
+        .graph {
+            width: 100%;
+            display: flex;
+            section {
+                width: calc(100% / 7);
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                li {
+                    width: 97%;
+                    height: 40px;
+                    background-color: hsl(25, 47%, 15%);
+                    margin-bottom: 6px;
+                    border-radius: 4px;
+                    list-style: none;
+                    color: #FFF;
+                    font-weight: bold;
+                    font-size: 12px;
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                }
+                div {
+                    width: 75%;
+                    background-color: hsl(10, 79%, 65%);
+                    height: 100%;
+                    border-radius: 5px;
+                    &:hover {
+                        background-color: #f29d8c;
+                    }
+                }
+            }
+            section:hover li {
+                display: flex;
+            }
+        }
+        .days {
+            width: 100%;
+            display: flex;
+            section {
+                margin-top: 5px;
+                width: calc(100% / 7);
+                text-align: center;
+                color: hsl(25, 47%, 15%);
+                font-weight: bold;
+                font-size: 13px;
+            }
+        }
+        .hr {
+            margin-top: 20px;
+            width: 100%;
+            height: 2px;
+            background-color: hsl(27, 66%, 92%);
+        }
+        .sum {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p,h1,h5, span {
+                margin: 4px 0px;
+                font-family: 'Outfit', sans-serif;
+                color: hsl(25, 47%, 15%);
+                font-weight: bold;
+            }
+            .left {
+                width: 50%;
+                h1 {
+                    font-size: 35px;
+                }
+                p {
+                    opacity: 0.5;
+                }
+            }
+            .right {
+                width: 50%;
+                text-align: end;
+                span {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 408px) and (min-width: 370px) {
+    .container {
+        width: 370px;
+    }
+}

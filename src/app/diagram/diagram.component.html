@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="top">
+      <section>
+        <p>My balance</p>
+        <strong>$921.48</strong>
+      </section>
+      <section class="logo">
+        <img src="../../assets/logo.svg" alt="">
+      </section>
+    </div>
+    <div class="bottom">
+      <h2>Spending - Last 7 days</h2>
+      <div class="graph">
+        <section *ngFor="let Amount of DATA">
+          <li>
+            ${{Amount.amount}}
+          </li>
+          <div 
+          [ngStyle]="{backgroundColor: Amount.amount > 50 ? 'hsl(186, 34%, 60%)':'','height.%': Amount.amount}"
+          ></div>
+        </section>
+      </div>
+      <div class="days">
+        <section *ngFor="let days of DATA">
+          {{days.day}}
+        </section>
+      </div>
+      <div class="hr"></div>
+      <div class="sum">
+        <section class="left">
+          <p>Total this month</p>
+          <h1>$478.33</h1>
+        </section>
+        <section class="right">
+          <h5>+2.4%</h5>
+          <span>from last month</span>
+        </section>
+      </div>
+    </div>
+  </div>
